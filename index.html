@@ -9,41 +9,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/svg-inject.min.js"></script>
 </head>
 <body>
   <!-- ======= HEADER ======= -->
- <header>
+ <header id="header">
     <!-- ======= NAVBAR MOBILE ======= -->
     <nav class="navbar-mobile">
-      <div class="icon-menu" id="icon-menu"></div>
-      <div class="logo"></div>
-      <a href="Login"></a>
+      <div class="hamburger-menu" id="hamburger-menu"></div>
+      <div class="logo">
+        <a href="">
+          <img src="svg/logonu.svg" alt="Logo Nubank" onload="SVGInject(this)">
+        </a>
+      </div>
+      <a href="Login">Login</a>
     </nav>
 
     <!-- ======= NAVBAR DESKTOP ======= -->
     <nav class="navbar-desktop">
       <div class="navbar-desktop-item-1">
-        <div class="logo"></div>
+        <div class="logo">
+          <a href="">
+            <img src="svg/logonu.svg" alt="Logo Nubank" onload="SVGInject(this)">
+          </a>
+        </div>
         <ul class="menu-desktop">
-          <li class="menu-item">
+          <li class="menu-item" id="menu-item-1">
             <a href="" class="nav-link-desktop">Nubank</a>
-            <ul class="dropdown">
+            <ul class="dropdown-menu" id="dropdown-item-1">
               <li class="dropdown-item"><a href="" class="nav-link-dropdown">O Nu</a></li>
               <li class="dropdown-item"><a href="" class="nav-link-dropdown">Carreiras</a></li>
               <li class="dropdown-item"><a href="" class="nav-link-dropdown">Imprensa</a></li>
             </ul>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" id="menu-item-2">
             <a href="" class="nav-link-desktop">Conta Digital</a>
-            <ul class="dropdown">
+            <ul class="dropdown-menu" id="dropdown-item-2">
               <li class="dropdown-item"><a href="" class="nav-link-dropdown">Crie sua conta</a></li>
               <li class="dropdown-item"><a href="" class="nav-link-dropdown">Transferências</a></li>
               <li class="dropdown-item"><a href="" class="nav-link-dropdown">Rendimento</a></li>
             </ul>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" id="menu-item-3">
             <a href="" class="nav-link-desktop">Pra você</a>
-            <ul class="dropdown">
+            <ul class="dropdown-menu" id="dropdown-item-3">
               <li class="dropdown-item"><a href="" class="nav-link-dropdown">Comunidade</a></li>
               <li class="dropdown-item"><a href="" class="nav-link-dropdown">Rewards</a></li>
               <li class="dropdown-item"><a href="" class="nav-link-dropdown">Novidade</a></li>
@@ -58,7 +67,7 @@
     </nav>
 
     <!-- ======= MENU MOBILE ======= -->
-    <nav class="menu-mobile">
+    <nav class="menu-mobile" id="menu-mobile">
       <ul class="nav-list-mobile">
         <li><a href="" class="nav-link-mobile">Nubank</a></li>
         <li><a href="" class="nav-link-mobile">Conta Digital</a></li>
@@ -69,5 +78,7 @@
     </nav>
  </header>
 
+ <!-- ======= JS ======= -->
+ <script src="js/app.js"></script>
 </body>
 </html>
