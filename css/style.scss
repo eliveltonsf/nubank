@@ -1,5 +1,5 @@
 *, *::after, *::before {
-  width: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -20,8 +20,8 @@ body{
   position: relative;
 
   scroll-behavior: smooth;
-  background-color: #1a1a1a;
-  
+  background-color: $white-dark;
+
 }
 
 svg, img {
