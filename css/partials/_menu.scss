@@ -274,13 +274,19 @@ header {
   flex-direction: column;
 
   svg {
-    display: inline-block;
     width: 36px;
     height: 36px;
 
     path {
       stroke: $gray-7;
       transition: 0.7s ease;
+    }
+
+    &:hover{
+      path {
+        stroke: $primary-normal;
+      }
+  
     }
   }
 }
