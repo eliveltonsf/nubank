@@ -338,6 +338,13 @@ a:hover {
   width: 100%;
 }
 
+.button-app {
+  transition: 0.5s ease;
+}
+.button-app:hover {
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.15)) drop-shadow(0px 10.125px 9.34559px rgba(169, 80, 196, 0.01)) drop-shadow(0px 2.12866px 5.88168px rgba(169, 80, 196, 0.035)) drop-shadow(0px 0.769896px 0.40393px rgba(169, 80, 196, 0.0040771));
+}
+
 .s-0 {
   margin: 0;
   padding: 0;
@@ -1441,5 +1448,24 @@ header {
   }
   100% {
     fill-opacity: 0.4;
+  }
+}
+.fignu4-letter-u, .fignu4-letter-n {
+  animation: fig4-letter 4s ease infinite alternate;
+  stroke-width: 4;
+  stroke-dasharray: 0 400;
+  stroke-opacity: 1;
+}
+
+@keyframes fig4-letter {
+  0% {
+    stroke-width: 4;
+    stroke-dasharray: 1 400;
+    stroke-opacity: 1;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */
