@@ -176,6 +176,26 @@
   }
 }
 
+.bg-invite {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.svg-invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .svg-invite {
+    transform: scale(1.5);
+    transform: translate(-50%, -50%);
+  }
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
@@ -1467,5 +1487,17 @@ header {
     stroke-width: 4;
     stroke-dasharray: 400 0;
     stroke-opacity: 1;
+  }
+}
+.fignu5-ball1 {
+  animation: translate-ball 4s ease infinite alternate;
+}
+
+@keyframes translate-ball {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(200px, -100px, 0);
   }
 }/*# sourceMappingURL=style.css.map */
