@@ -133,9 +133,9 @@ h5{
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold; 
+  font-weight: bold;
 
-  
+
   @include typeface-title(h5, desktop);
 
   @include responsive(s){
@@ -167,4 +167,8 @@ strong{
 
 .text-center{
   text-align: center;
+}
+
+.weight-light{
+  font-weight: 300;
 }
