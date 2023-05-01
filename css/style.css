@@ -292,6 +292,8 @@ h3 {
 @media screen and (max-width: 960px) {
   h3 {
     font-family: "Sora", sans-serif;
+    font-size: 24px;
+    line-height: 120%;
   }
 }
 
@@ -1281,12 +1283,24 @@ header {
   height: 100vh;
   background-color: #f7f2fa;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   opacity: 0;
   pointer-events: none;
   transform: translate3d(0, -100px, 0);
   transition: 1s ease;
+}
+.menu-mobile svg {
+  width: 36px;
+  height: 36px;
+}
+.menu-mobile svg path {
+  stroke: #a6a6a7;
+  transition: 0.7s ease;
+}
+.menu-mobile svg:hover path {
+  stroke: #82269e;
 }
 
 .active-menu-mobile {
@@ -1295,28 +1309,19 @@ header {
 }
 
 .nav-list-mobile {
+  width: 100%;
+  margin-top: 40px;
   max-width: 1440px;
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.nav-list-mobile svg {
-  width: 36px;
-  height: 36px;
-}
-.nav-list-mobile svg path {
-  stroke: #a6a6a7;
-  transition: 0.7s ease;
-}
-.nav-list-mobile svg:hover path {
-  stroke: #82269e;
-}
 
 .nav-link-mobile {
   display: inline-block;
   font-family: "Sora", sans-serif;
-  font-size: 36px;
-  line-height: 120%;
+  font-size: 18px;
+  line-height: 130%;
   color: #555456;
   padding: 16px 24px;
   position: relative;

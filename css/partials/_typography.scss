@@ -28,7 +28,7 @@
     font-size: 36px;
     line-height: 120%;
   }
-  @else if $size == h2 and $device == mobile{
+  @else if $size == h3 and $device == mobile{
     font-size: 24px;
     line-height: 120%;
   }
