@@ -65,7 +65,7 @@ $container-s: 540px;
 
 .flex-top{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -233,6 +233,10 @@ $container-s: 540px;
   @include responsive(s){
     justify-content: center;
     align-items: center;
+
+    p{
+      text-align: center;
+    }
   }
 }
 
@@ -263,18 +267,32 @@ $container-s: 540px;
 .list {
   list-style: none;
 
-
   li {
     margin-bottom: 12px;
   }
 
   a{
-    color: $secondary-light
+    color: $secondary-light;
   }
 }
 
 footer{
   background: linear-gradient(220.94deg, #A950C4 14.43%, #82269E 85.28%);
+
+  section{
+    div{
+
+      @include responsive(s){
+       margin-bottom: 24px;
+       margin-left: 0 !important;
+
+       ul{
+        margin-top: 8px !important;
+        padding-top: 8px !important;
+       }
+      }
+    }
+  }
 }
 
 .bt-purple{

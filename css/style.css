@@ -27,7 +27,7 @@
 
 .flex-top {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -190,6 +190,9 @@
     justify-content: center;
     align-items: center;
   }
+  .best-item p {
+    text-align: center;
+  }
 }
 
 .bg-invite {
@@ -224,6 +227,16 @@
 
 footer {
   background: linear-gradient(220.94deg, #A950C4 14.43%, #82269E 85.28%);
+}
+@media screen and (max-width: 960px) {
+  footer section div {
+    margin-bottom: 24px;
+    margin-left: 0 !important;
+  }
+  footer section div ul {
+    margin-top: 8px !important;
+    padding-top: 8px !important;
+  }
 }
 
 .bt-purple {
@@ -303,6 +316,21 @@ h5 {
   }
 }
 
+h6 {
+  color: #161617;
+  font-weight: 300;
+  font-family: "Sora", sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+}
+@media screen and (max-width: 960px) {
+  h6 {
+    font-family: "Sora", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
 p {
   color: #666566;
   font-family: "Source Sans Pro", sans-serif;
@@ -330,6 +358,10 @@ strong {
   strong {
     font-family: "Sora", sans-serif;
   }
+}
+
+.text-small {
+  font-size: 12px;
 }
 
 .text-center {
@@ -1512,6 +1544,7 @@ header {
 .icon-networks {
   max-width: 40px;
   padding: 8px;
+  -moz-transform: scale(1.6);
 }
 
 .div-card {
@@ -1531,6 +1564,13 @@ header {
 }
 .card svg text {
   font-family: "Sora", sans-serif;
+}
+@media screen and (max-width: 960px) {
+  .card {
+    animation: none;
+    background-image: url(../../svg/nubank.svg);
+    background-size: cover;
+  }
 }
 
 @keyframes flip-card {
@@ -1666,6 +1706,12 @@ header {
 @media screen and (max-width: 960px) {
   #people2 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #people3 {
+    margin: 0;
   }
 }
 

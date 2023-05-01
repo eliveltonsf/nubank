@@ -52,6 +52,16 @@
     font-size: 16px;
     line-height: 150%;
   }
+
+  //H6
+  @else if $size == h6 and $device == desktop{
+    font-size: 18px;
+    line-height: 130%;
+  }
+  @else if $size == h6 and $device == mobile{
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 
@@ -143,6 +153,16 @@ h5{
   }
 }
 
+h6{
+  color: $black-dark;
+  font-weight: 300;
+  @include typeface-title(h6, desktop);
+
+  @include responsive(s){
+    @include typeface-title(h6, mobile);
+  }
+}
+
 p{
   color: $gray-3;
   @include typeface-body(p2, desktop);
@@ -163,6 +183,10 @@ strong{
   @include responsive(s){
     @include typeface-title(p2, mobile);
   }
+}
+
+.text-small{
+  font-size: 12px;
 }
 
 .text-center{
