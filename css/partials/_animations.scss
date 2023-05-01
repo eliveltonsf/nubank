@@ -28,6 +28,12 @@ $height-card: 0.64 * $width-card;
       font-family: 'Sora', sans-serif;
     }
   }
+
+  @include responsive(s){
+    animation:none;
+    background-image: url(../../svg/nubank.svg);
+    background-size: cover;
+  }
 }
 
 @keyframes flip-card {
@@ -168,6 +174,13 @@ $height-card: 0.64 * $width-card;
 #people2{
   @include responsive(s){
     display: none;
+  }
+}
+
+
+#people3{
+  @include responsive(s){
+    margin: 0;
   }
 }
 
