@@ -243,6 +243,18 @@ footer {
   border-top: 1px solid #bb71d2;
 }
 
+@media screen and (max-width: 540px) {
+  .btn-store {
+    flex-direction: column;
+  }
+  .btn-store a {
+    margin-bottom: 24px;
+  }
+  .btn-store a svg {
+    margin: 0 !important;
+  }
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;

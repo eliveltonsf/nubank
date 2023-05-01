@@ -298,3 +298,19 @@ footer{
 .bt-purple{
   border-top: 1px solid $secondary-light;
 }
+
+.btn-store{
+
+  @include responsive(xs){
+    flex-direction: column;
+
+    a{
+      margin-bottom: 24px;
+
+      svg {
+        margin: 0 !important;
+      }
+    }
+  }
+
+}
